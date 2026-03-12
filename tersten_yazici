@@ -1,0 +1,19 @@
+using System.Reflection;
+
+namespace terstenyazici.cs
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            string metin = Console.ReadLine();
+
+            char[] dizi = metin.ToCharArray();
+            Array.Reverse(dizi);
+
+            Console.WriteLine(new string(dizi));
+
+        }
+    }
+}
