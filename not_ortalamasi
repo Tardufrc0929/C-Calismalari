@@ -1,0 +1,40 @@
+namespace not_otralama.cs
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            object[,] dersler = new object[,]
+            {
+                {"Matematik: ", 1, 6}, // Matematik
+                {"Fizik: ", 2, 2}, // Fizik
+                {"Kimya: ", 3, 2}, // Kimya
+                {"Biyoloji: ", 4, 2}, // Biyoloji
+                {"Türk Dili ve Edebiyatı: ", 5, 5}, // Türk Dili ve Edebiyatı
+                {"İngilizce: ", 6, 4}, // İngilizce
+                {"Tarih: ", 7, 2}, // Tarih
+                {"Coğrafya: ", 8, 2}, // Coğrafya
+                {"Din Kültürü: ", 9, 2}, // Din Kültürü
+                {"Beden Eğitimi: ", 10, 2}, // Beden Eğitimi
+                {"Felsefe: ", 11, 2}, // Felsefe
+                {"TDT: ", 12, 1}, // TDT
+                {"Almanca: ", 13, 2}, // Almanca
+                
+            };
+            double ortalama = 0;
+
+            for (int i = 0; i < 13; i++)
+            {
+                
+
+                Console.WriteLine(dersler[i, 0]);
+                ortalama += Convert.ToDouble(Console.ReadLine()) * Convert.ToDouble(dersler[i, 2]);
+
+
+            }
+            ortalama /= 34;
+            Console.WriteLine("Karne notunuz: " + Convert.ToString(ortalama));
+            Console.ReadLine();
+        }
+    }
+}
